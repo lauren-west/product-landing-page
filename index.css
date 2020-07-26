@@ -1,23 +1,31 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: brown;
+    margin: 15px 15px 15px 15px;
 }
 
-.nav-link {
-
-}
-
-#header {
-
+footer {
+    text-align: center;
 }
 
 #header-img {
+    margin-top: 15px;
     width: 10%;
     height: 10%;
 }
 
-#nav-bar {
+#container {
+   background-color: coral;
    
+}
+
+#jc-beans {
+    background-color: rgb(220, 120, 150);
+}
+
+#nav-bar {
     
+    margin-left: 65%;
 }
 
 #email{
@@ -29,42 +37,92 @@ body {
 }
 
 #features-link {
-
-      
+    background-color: aqua;
+    padding: 20px 40px 20px 40px;
+    justify-content: space-between;
+    margin:10px;
+     
 }
 #products-link {
-
+    background-color: blue;
+    padding: 20px 40px 20px 40px;
+    margin:10px;
       
 }#location-link {
- 
-      
+    background-color: cadetblue;
+    padding: 20px 40px 20px 40px;
+    margin:10px;
 }
 
-#video {
-
+#video{
+    padding: 20px;
+    background-color: yellowgreen;
 }
 
-#jc-beans{
-
-}
 #description {
     font-style: italic;
     background-color: #eee;
 }
 
-#beans {
+#features {
+    display: flex;
+}
 
+#product-container {
+    display: flex;
+    background-color: blueviolet;       
+}
+
+#bean-holder {
+    background-color: cornflowerblue;
+    height: 150px;
+    width: 240px;
+}
+
+#ground-holder {
+    background-color: darkblue;
+    height: 150px;
+    width: 240px;
+}
+
+#k-cups-holder {
+    background-color: darkgoldenrod;
+    height: 150px;
+    width: 240px;
+}
+
+.full-card {
+    width: 90%;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: yellow;
+    display: flex;
+}
+
+.card-info {
+    
+    background-color: darkmagenta;
+    width: 245px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 4px;
+}
+
+.card-image{
+    display: flex;
+    background-color: teal;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 20%;
+    height: 20%;
+    padding: 4px;
 
 }
 
-#grounds{
-
-}
-
-#k-cups {
-
-}
-
-#coffee-pic {
-
+.center { 
+    margin-left: 290px; 
+    margin-right: 290px;
 }
