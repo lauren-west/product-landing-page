@@ -107,6 +107,10 @@ footer {
 
 #video{
     width: 1000px;
+    padding: 20px;
+    background-color: rgb(100, 72, 33);
+    border-radius: 15px;
+    border-color: #eee;
     
 }
 
