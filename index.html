@@ -4,42 +4,36 @@
 <body>
     <header id="header">
         <link rel="stylesheet" href="index.css">
-        <title>Coffee</title>
+        <title>J.C. Beans</title>
 
         <img id="header-img"
             src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/24909576_156372191654376_2711027488856559135_n.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=Nd1D7GVUqncAX8CMI2i&_nc_ht=scontent-lax3-2.xx&oh=ee02c43bad5125531ccdfb95082bf286&oe=5F4281F4"
-            alt="JC Beans Logo">
+            alt="J.C. Beans Logo">
         <div id="container">
-            <h1 id="jc-beans">JC Beans</h1>
+            <h1 id="jc-beans">J.C. Beans</h1>
             <p id="description">The Best Coffee in Town</p>
-            <div id="head-box">
-                <nav id="nav-bar">
-                    <button id="features-link"><a href="#features">Features</a></button>
-                    <button id="products-link"><a href="#products">Products</a></button>
-                    <button id="location-link"><a href="#location">Location</a></button>
-                    </ul>
-                </nav>
-            </div>
+
+        </div>
+        <div id="head-box">
+            <nav id="nav-bar">
+                <button color= "rgb(100, 72, 33);"class=nav-link id="features-link"><a href="#bean-holder">Features</a></button>
+                <button class=nav-link id="products-link"><a href="#products">Products</a></button>
+                <button class=nav-link id="location-link"><a href="#location">Location</a></button>
+                </ul>
+            </nav>
         </div>
         <br>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </header>
     <main>
-        <div class="center">
-        <video id="video" width="110%" controls>
-            <source src="video.mp4" type="video/mp4">
-        </video>
-        </div>
-
-
-        <div id="features">
-            <p id="smell">The smell of heaven.</p>
-            <p id="taste">Grounded in hope of rich, full-bodied taste.</p>
-            <p id="ambiance"> An ambiance of happiness. Take a nice, long sip.</p>
+        <div id="video-container">
+            <video id="video" width="100%" controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
         </div>
 
         <div class="full-card">
-            <div class="card-info">
+            <div class="card-info" id="coffee-holder">
                 <div id="bean-holder">
                     <h2 id="beans">Beans</h2>
                     <p>Our coffee belt beans will tickle your chin.
@@ -58,29 +52,38 @@
             </div>
         </div>
 
-
+        <div id="features-box">
+            <div id="features">
+                <p id="smell">The smell of heaven.</p>
+                <p id="taste">Our blend is thick, flavorful, and balanced.</p>
+                <p id="ambiance">Your cup is waiting for you. Take a nice, long sip.</p>
+            </div>
+        </div>
 
         <div id="inside-container" class="full-card">
             <div class="card-info">
-                <p>Cozy interior conductive to studying and socializing.</p>
+                <h2>Atmosphere</h2>
+                <p>Cozy interior conductive to studying and socializing. Escape the chaos, buy a coffee, and read a book
+                    to getaway. Or, check out our drive through today!</p>
+
+                <h2>Drive Thru</h2>
+                <p>Want to take your food to-go? Want minimal contact during the era of COVID-19? Try out our
+                    drive-thru.</p>
+
+                <h2>Hours</h2>
+                <p>We are open 8am to 8pm daily.</p>
+                <div id="location">
+                    <h2>Location</h2>
+                    <p type="address" id="Beans"><a href="https://www.google.com/maps/place/J+C+Beans+Inc/@33.4662056,-117.7065268,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcf05a5aa3061f:0x1a8a18dad87c1bf4!8m2!3d33.4662056!4d-117.7043381">34114 Pacific Coast Hwy, Dana Point, CA 92629</a></p>
+                </div>
             </div>
             <div class="card-pic">
                 <img id="inside-pic" src="jcbeans.jpg" alt="coffee">
             </div>
         </div>
 
-        <div id="outside-container" class="full-card">
-            <div id="location" class="card-info">
-                <h2>Location</h2>
-                <p type="address" id="Beans">34114 Pacific Coast Hwy, Dana Point, CA 92629</p>
-                <p>Check out our drive through today!</p>
-            </div>
-            <div class="card-image">
-                <img id="outside-pic" src="jcbeansoutside.jpg" alt="coffee">
-            </div>
-        </div>
-        <form action="mailto: https://www.freecodecamp.com/email-submit" method="POST" enctype="multipart/form-data"
-            name="EmailForm">Subscribe to our JC Beans newsletter today!
+        <form id="form-email" action="mailto: https://www.freecodecamp.com/email-submit" method="POST"
+            enctype="multipart/form-data" name="EmailForm">Subscribe to our JC Beans newsletter today!
             <br>
             <input type="email" size="24" name="email" id="email">
             <br>
@@ -88,8 +91,9 @@
         </form>
 
         <footer>
-            <button>Privacy Policy</button>
-            <button>Terms and Conditions</button>
+            <p>Privacy Policy</p>
+            <p id="separator">|</p>
+            <p>Terms and Conditions</p>
         </footer>
     </main>
 </body>
